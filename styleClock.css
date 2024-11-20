@@ -1,0 +1,58 @@
+/*Estilo de letra*/
+@font-face {
+    font-family: LCD;
+    font-weight: 100;
+    src: local(※), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/383755/lcd-n___-webfont.woff) format("woff");
+}
+
+/*Centrar el div en la pagina*/
+html {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(img/Rio_Fuataba.webp);
+    /*Escalar la imagen para cubrir todo el area*/
+    background-size: cover;
+    /*Centrar la imagen*/
+    background-position: center;
+    /*Evitar que la imagen se repita*/
+    background-repeat: no-repeat;
+}
+
+/*Estilo del reloj digital*/
+.digital_Clock {
+    font-family: LCD;
+    border-radius: 2rem;
+    user-select: none;
+    padding: 0.2rem;
+    border: 0.6rem solid #0B1B32;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*Estilo de la fecha*/
+#date {
+    border-radius: 2rem;
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+    color: #0B1B32;
+}
+
+/*Estilo del tiempo*/
+#time {
+    border-radius: 2rem;
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8rem;
+    color: #0B1B32;
+}
